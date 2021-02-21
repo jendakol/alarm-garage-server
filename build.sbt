@@ -15,6 +15,9 @@ lazy val root = (project in file("."))
     name := "alarm-garage-server",
     Settings.missingLinkSettings,
     Compile / mainClass := Some("cz.jenda.alarm.garage.Main"),
+    Compile / PB.targets := Seq(
+      scalapb.gen() -> (Compile / sourceManaged).value / "scalapb"
+    ),
     libraryDependencies ++= Seq(
       Dependencies.fs2,
       Dependencies.monix,
