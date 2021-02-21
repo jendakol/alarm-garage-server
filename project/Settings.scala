@@ -6,6 +6,7 @@ object Settings {
     missinglinkExcludedDependencies ++= List(
       moduleFilter(organization = "ch.qos.logback", name = "logback-classic"),
       moduleFilter(organization = "ch.qos.logback", name = "logback-core"),
+      moduleFilter(organization = "com.chuusai", name = "shapeless_2.13"),
       moduleFilter(organization = "com.squareup.okhttp3", name = "okhttp"),
       moduleFilter(organization = "com.sun.activation", name = "jakarta.activation"),
       moduleFilter(organization = "com.sun.mail", name = "jakarta.mail"),

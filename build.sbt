@@ -18,7 +18,10 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       Dependencies.fs2,
       Dependencies.monix,
+      Dependencies.mqttClient,
+      // config
       Dependencies.config,
+      Dependencies.pureconfig,
       // logging
       Dependencies.slog4sApi,
       Dependencies.slog4sSlf4j,

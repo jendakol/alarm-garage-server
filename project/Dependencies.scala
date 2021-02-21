@@ -8,6 +8,8 @@ object Dependencies {
   val metricsStatsd = "com.avast.metrics" % "metrics-statsd" % Versions.metrics
   val metricsScala = "com.avast.metrics" %% "metrics-scala" % Versions.metrics
   val monix = "io.monix" % "monix_2.13" % "3.3.0"
+  val mqttClient = "net.sigusr" %% "fs2-mqtt" % "0.4.2"
+  val pureconfig = "com.github.pureconfig" %% "pureconfig" % "0.14.0"
   val scalaTest = "org.scalatest" %% "scalatest" % "3.2.2"
   val slf4j = "org.slf4j" % "slf4j-api" % Versions.slf4j
   val slf4jJulBridge = "org.slf4j" % "jul-to-slf4j" % Versions.slf4j
