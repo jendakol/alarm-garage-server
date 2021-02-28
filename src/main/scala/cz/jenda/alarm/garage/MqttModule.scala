@@ -41,7 +41,7 @@ object MqttModule {
     for {
       session <- Session[Task](transportConfig, sessionConfig)
       _ <- Resource.make(session.subscribe(topics))(_ => session.unsubscribe(topics.map(_._1)))
-      _ <- Resource.liftF(session.messages().evalMap(processMessage).compile.drain)
+      _ <- Resource.liftF(session.messages().evalMap(processMessage).compile.drain.startAndForget)
     } yield {}
   }
 
