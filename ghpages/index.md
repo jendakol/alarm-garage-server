@@ -1,3 +1,3 @@
-# Garage Alarm - Main Module
+# Garage Alarm - Server Module
 
 TODO
